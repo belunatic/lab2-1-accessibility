@@ -26,13 +26,21 @@
 						class="contact-input"
 						type="text"
 						placeholder="John Doe"
-						id="name" />
+						id="name"
+						aria-describedby="name-error" />
+					<p id="name-error" style="display: none; color: red">
+						Error on the name field
+					</p>
 					<label for="email">Email</label>
 					<input
 						class="contact-input"
 						type="text"
 						placeholder="jd@mail.com"
-						id="email" />
+						id="email"
+						aria-describedby="email-error" />
+					<p id="name-error" style="display: none; color: red">
+						Error on the email field
+					</p>
 					<label for="message">Message</label>
 					<textarea
 						class="contact-textarea"
@@ -40,6 +48,9 @@
 						cols="50"
 						placeholder="I would like..."
 						id="message"></textarea>
+					<p aria-live="polite" style="color: red; display: none">
+						Form is invalid!
+					</p>
 					<button
 						class="contact-submit-button"
 						type="button"
